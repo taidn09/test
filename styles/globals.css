@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn-outlined-primary {
+    @apply border-spacing-1 bg-white text-blue-500 border border-blue-500 px-2 py-1 rounded-sm uppercase font-medium shadow-sm shadow-blue-500/50 duration-300 ease-linear
+}
+
+.btn-outlined-primary:hover {
+    @apply shadow-md -translate-y-1
+}
+
+.btn-outlined-danger {
+    @apply border-spacing-1 bg-white text-red-500 border border-red-500 px-2 py-1 rounded-sm uppercase font-medium shadow-sm shadow-red-500/50 duration-300 ease-linear
+}
+
+.btn-outlined-danger:hover {
+    @apply shadow-md -translate-y-1
+}
+
+.btn-success {
+    @apply text-white bg-green-600 ease-linear duration-100 p-2
+}
+
+.btn-success:hover {
+    @apply bg-green-500
+}
+
+select,
+input,
+textarea {
+    @apply border border-gray-500/50 outline-0 p-2 rounded-[4px] ease-linear duration-200 w-full my-2
+}
+
+select,
+input:focus,
+textarea:focus {
+    @apply border-blue-500
+}
+
+section {
+    @apply w-full px-2 bg-white ms-2 py-5 h-full
+}
+
+.alert {
+    @apply p-2 rounded-md w-full text-center border
+}
+
+.alert-success {
+    @apply text-[#0f5132] bg-[#d1e7dd] border-[#d3d6d8]
+}
+
+.alert-error {
+    @apply bg-[#f8D7DA] text-[#842029] border-[#f5c2c7]
+}
